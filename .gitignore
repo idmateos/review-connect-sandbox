@@ -1,0 +1,4 @@
+dist/
+review-release.json
+.env
+.DS_Store

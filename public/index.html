@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio Norte · Demo</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="./" data-review-id="brand">Estudio Norte</a>
+    <nav aria-label="Principal"><a href="#projects">Proyectos</a><a href="#contact">Contacto</a></nav>
+    <span class="badge" data-review-id="demo-version">Demo v1</span>
+  </header>
+  <main>
+    <section class="hero" data-review-id="hero">
+      <p class="eyebrow">Un espacio para probar ideas</p>
+      <h1 data-review-id="hero-title">Pequeños cambios.<br>Mejores experiencias.</h1>
+      <p>Una web ficticia con elementos sencillos para probar comentarios, capturas y nuevas versiones.</p>
+      <button type="button" id="explore" data-review-id="explore">Ver proyectos <span aria-hidden="true">↓</span></button>
+    </section>
+    <section id="projects" aria-labelledby="projects-title" data-review-id="projects">
+      <div class="section-heading"><h2 id="projects-title">Proyectos recientes</h2><span>3 ideas en marcha</span></div>
+      <div class="cards">
+        <article data-review-id="card-atlas">
+          <div class="illustration atlas" role="img" aria-label="Montañas verdes">△</div>
+          <h3>Atlas</h3><p>Una nueva forma de organizar tus escapadas.</p>
+          <button type="button" class="secondary" data-detail="Atlas" data-review-id="button-atlas"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Z M3 8v9l9 5 9-5V8 M12 13v9"/></svg> Ver proyecto</button>
+        </article>
+        <article data-review-id="card-brisa">
+          <div class="illustration brisa" role="img" aria-label="Círculo naranja">◯</div>
+          <h3>Brisa</h3><p>Objetos cotidianos diseñados con calma.</p>
+          <button type="button" class="secondary" data-detail="Brisa" data-review-id="button-brisa">Ver proyecto</button>
+        </article>
+        <article data-review-id="card-faro">
+          <div class="illustration faro" role="img" aria-label="Estrella azul">✳</div>
+          <h3>Faro</h3><p>Un punto de encuentro para equipos pequeños.</p>
+          <button type="button" class="secondary" data-detail="Faro" data-review-id="button-faro">Ver proyecto</button>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title" data-review-id="contact">
+      <div><p class="eyebrow">Hablemos</p><h2 id="contact-title">Tu próxima idea</h2><p>Formulario de demostración. No guarda ni envía datos.</p></div>
+      <form>
+        <label>Nombre<input name="name" autocomplete="off" placeholder="Nombre de prueba" required></label>
+        <label>Mensaje<textarea name="message" rows="3" placeholder="Escribe una idea ficticia" required></textarea></label>
+        <button type="submit" data-review-id="send-message">Enviar mensaje</button>
+        <p id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer>Estudio Norte · Sitio ficticio para pruebas</footer>
+  <dialog aria-labelledby="detail-title" data-review-id="project-dialog"><h2 id="detail-title"></h2><p>Este contenido aparece al pulsar un botón. También puedes señalarlo durante una revisión.</p><button type="button" id="close-detail">Cerrar</button></dialog>
+</body>
+</html>
