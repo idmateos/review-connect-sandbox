@@ -8,7 +8,7 @@ permissions:
   contents: read
 env:
   REVIEW_CONNECT_URL: https://review.igordiaz.com
-  REVIEW_CONNECT_SITE: 2196320b-00f7-44f2-88b3-7413722df90a
+  REVIEW_CONNECT_SITE: 72da8805-ce7b-4747-8947-cc80694d53d1
 jobs:
   check:
     runs-on: ubuntu-latest
